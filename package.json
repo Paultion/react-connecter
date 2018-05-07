@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "pre-start": "sh ./shells/pre-start.sh",
+    "start": "sh ./shells/start.sh",
+    "s-start": "yarn && cd ./example && yarn && npm run start"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

@@ -5,7 +5,6 @@ import './App.css';
 
 const appView = ({ data, actions, type }) => {
   const { value, test } = data;
-  console.log(test)
   const { onUpdateValue, onUpdateTest } = actions;
   return (
     <div>
